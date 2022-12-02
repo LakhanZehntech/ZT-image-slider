@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel> ZT Carousel </masterLabel><!-- custom component name -->
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+
+            <!-- networkName -->
+            <!-- <property name="networkName" type="String" label="Please provide your Site Name" /> -->
+            <!-- Indicator color and border color -->
+            <property name="bgindicator" type="Color" default="White" label="Indicator Background Color" />
+            <property name="bordercolorindicator" type="Color" default="Blue" label="Indicator Border Color" />
+
+            <!-- for Description and title section background color -->
+            <property name="carouselcolor" type="Color" default="rgba(28, 31, 27, 0.59)" label="Background Color" />
+
+            <!-- Description color   -->
+            <property name="description" type="Color" default="Black" label="Description Color" />
+
+
+            <!-- title color  -->
+            <property name="title" type="Color" default="Black" label="Title Color" />
+
+               <!-- for hide and show Description and title section -->
+               <property name="display" type="String" default="Block" datasource="Block,None" label="Caption (Show/Hide) "></property>
+
+             <!-- for position -->
+             <property name="position" type="String" default="Absolute" datasource="Absolute,Relative" label="Caption Position "></property>
+
+         
+            <!-- for carousel content height -->
+            <property name="carouselcontentheight" type="String" default="70px"  label="Caption Height "></property>
+
+            <!-- Description font size  -->
+            <property name="descriptionfont" type="String" default="15px" label="Description Font Size"></property>
+
+            <!-- title size  -->
+            <property name="titlefont" type="String" default="15px" label="Title Font Size"></property>
+
+            <!-- image height and width -->
+            <property name="height" type="String" default="150px" label="Height"></property>
+            <property name="width" type="String" default="1200px" label="Width"></property>
+
+            <!-- scroll duration -->
+            <property name="scrollduration" type="Integer" default="5" label="Scroll Duration" />
+
+
+            <!-- first silde -->
+            <property name="showImage1" type="Boolean" default="true" label="Add Slide One:" />
+            <property name="contentId" type="ContentReference" filter="cms_image" default="" label="First Slide Image" /> <!--drop image-->
+            <property name="strTitle1" type="String" default="Welcome in Salesforce" label="Enter The Header One" /> <!--header-->
+            <property name="description1" type="String" default="Welcome in Salesforce" label="Description One" /> <!--Description-->
+            <!-- <property name="imgUrl1" type="String" default="" label="Enter Image One URL" /> -->
+            <!-- imgUrl -->
+            <property name="alternative1" type="String" default="Welcome in Salesforce" label="Alternative Text " /> <!--Alternative Text-->
+            <property name="href1" type="String" default="" label="Enter Href" /> <!--Href Link-->
+
+            <!-- Secound silde -->
+            <property name="showImage2" type="Boolean" default="true" label="Add Slide Two:" />
+            <property name="contentId2" type="ContentReference" filter="cms_image" default="" label="Secound Slide Image" /> <!--drop image-->
+            <property name="strTitle2" type="String" default="Welcome in Salesforce" label="Enter The Header Two" /> <!--header-->
+            <property name="description2" type="String" default="Welcome in Salesforce" label="Description Two" /> <!--Description-->
+            <!-- <property name="imgUrl2" type="String" default="" label="Enter Image Two URL" /> -->
+            <!-- imgUrl -->
+            <property name="alternative2" type="String" default="Welcome in Salesforce" label="Alternative Text " /> <!--Alternative Text-->
+            <property name="href2" type="String" default="" label="Enter Href" /> <!--Href Link-->
+
+            <!-- Third silde -->
+            <property name="showImage3" type="Boolean" default="true" label="Add Slide Three:" />
+            <property name="contentId3" type="ContentReference" filter="cms_image" default="" label="Third Slide Image" /> <!--drop image-->
+            <property name="strTitle3" type="String" default="Welcome in Salesforce" label="Enter The Header Three" /> <!--header-->
+            <property name="description3" type="String" default="Welcome in Salesforce" label="Description Three" /> <!--Description-->
+            <!-- <property name="imgUrl3" type="String" default="" label="Enter Image URL Three" /> -->
+            <!-- imgUrl -->
+            <property name="alternative3" type="String" default="Welcome in Salesforce" label="Alternative Text " /> <!--Alternative Text-->
+            <property name="href3" type="String" default="" label="Enter Href" /> <!--Href Link-->
+
+            <!-- fourt silde -->
+            <property name="showImage4" type="Boolean" default="true" label="Add Slide Four:" />
+            <property name="contentId4" type="ContentReference" filter="cms_image" default="" label="Fourth Slide Image" /> <!--drop image-->
+            <property name="strTitle4" type="String" default="Welcome in Salesforce" label="Enter The Header Four" /> <!--header-->
+            <property name="description4" type="String" default="Welcome in Salesforce" label="Description Four" /> <!--Description-->
+            <!-- <property name="imgUrl4" type="String" default="" label="Enter Image URL Four" /> -->
+            <!-- imgUrl -->
+            <property name="alternative4" type="String" default="Welcome in Salesforce" label="Alternative Text " /> <!--Alternative Text-->
+            <property name="href4" type="String" default="" label="Enter Href" /> <!--Href Link-->
+
+            <!-- Fifth silde -->
+            <property name="showImage5" type="Boolean" default="true" label="Add Slide Five:" />
+            <property name="contentId5" type="ContentReference" filter="cms_image" default="" label="Fifth Slide Image" /> <!--drop image-->
+            <property name="strTitle5" type="String" default="Welcome in Salesforce" label="Enter The Header Five" /> <!--header-->
+            <property name="description5" type="String" default="Welcome in Salesforce" label="Description Five" /> <!--Description-->
+            <!-- <property name="imgUrl5" type="String" default="" label="Enter Image URL Five" /> -->
+            <!-- imgUrl -->
+            <property name="alternative5" type="String" default="Welcome in Salesforce" label="Alternative Text" /> <!--Alternative Text-->
+            <property name="href5" type="String" default="" label="Enter Href" /> <!--Href Link-->
+
+            <!-- Sixth silde -->
+            <property name="showImage6" type="Boolean" default="true" label="Add Slide Six:" />
+            <property name="contentId6" type="ContentReference" filter="cms_image" default="" label="Sixth Slide Image" /> <!--drop image-->
+            <property name="strTitle6" type="String" default="Welcome in Salesforce" label="Enter The Header Six" /> <!--header-->
+            <property name="description6" type="String" default="Welcome in Salesforce" label="Description Six" /> <!--Description-->
+            <!-- <property name="imgUrl6" type="String" default="" label="Enter Image URL Six" /> -->
+            <property name="alternative6" type="String" default="Welcome in Salesforce" label="Alternative Text" /> <!--Alternative Text-->
+            <property name="href6" type="String" default="" label="Enter Href" /> <!--Href Link-->
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

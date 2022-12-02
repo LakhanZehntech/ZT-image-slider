@@ -1,0 +1,85 @@
+<template>
+
+    <div class="responsive">
+        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+            <lightning-carousel class="img_slds-carousel__panel" scroll-duration={scrollduration}>
+                <!-- first slide -->
+                <template if:true={Firstslide}>
+                <lightning-carousel-image
+                    src = "{imageUrl}"
+                    header = "{strTitle1}"
+                    description = "{description1}"
+                    alternative-text = "{alternative1}"
+                    href = "{href1}"        
+                    if:true={showImage1}>
+                </lightning-carousel-image>
+            </template>
+
+                <!-- slide two -->
+                <template if:true={FirstSecound}>
+                <lightning-carousel-image
+                    src = "{imageUrl2}"
+                    header = "{strTitle2}"
+                    description = "{description2}"
+                    alternative-text = "{alternative2}"  
+                    href = "{href2}"                 
+                    if:true={showImage2}>
+                </lightning-carousel-image>
+            </template>
+
+                  <!-- slide Three -->
+                  <template if:true={FirstThird}>
+                <lightning-carousel-image
+                    src = "{imageUrl3}"
+                    header = "{strTitle3}"
+                    description = "{description3}"
+                    alternative-text = "{alternative3}"
+                    href = "{href3}"
+                    if:true={showImage3}>
+                </lightning-carousel-image>
+            </template>
+
+                    <!-- slide Four -->
+                  <template if:true={Fourt}>
+
+                    <lightning-carousel-image
+                    src = "{imageUrl4}"
+                    header = "{strTitle4}"
+                    description = "{description4}"
+                    alternative-text = "{alternative4}"
+                    href = "{href4}"
+                    if:true={showImage4}>
+                </lightning-carousel-image>
+            </template>
+
+                <!-- slide Five -->
+                <template if:true={Fifth}>
+
+                <lightning-carousel-image
+                    src = "{imageUrl5}"
+                    header = "{strTitle5}"
+                    description = "{description5}"
+                    alternative-text = "{alternative5}"
+                    href = "{href5}"
+                    if:true={showImage5}>
+                </lightning-carousel-image>
+            </template>
+
+                 <!-- slide Six -->
+                <template if:true={Sixth}>
+
+                <lightning-carousel-image
+                    src = "{imageUrl6}"
+                    header = "{strTitle6}"
+                    description = "{description6}"
+                    alternative-text = "{alternative6}"
+                    href = "{href6}"
+                    if:true={showImage6}>
+                </lightning-carousel-image>
+            </template>
+
+            </lightning-carousel>    
+        </div>
+    </div> 
+
+</template>
